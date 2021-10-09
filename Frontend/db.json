@@ -1,0 +1,60 @@
+{
+  "filmes": [
+    {
+      "id": 1,
+      "nome": "Matrix",
+      "imagem": "https://nossaciencia.com.br/wp-content/uploads/2019/05/gera%C3%A7%C3%A3o-matrix.png",
+      "nota": "8",
+      "genero": "Ficção Científica"
+    },
+    {
+      "id": 2,
+      "nome": "Laranja Mecanica",
+      "imagem": "https://www.setcenas.com.br/wp-content/uploads/2020/11/1971-a-clockwork-orange-small-cke.jpg",
+      "nota": "9.5",
+      "genero": "Ficção Científica"
+    },
+    {
+      "id": 1,
+      "nome": "Perro loko",
+      "imagem": "https://miro.medium.com/max/844/1*xjg4LAQKjT5asq-ZcT-fFQ.jpeg",
+      "nota": "7",
+      "genero": "Terror"
+    },
+    {
+      "id": 2,
+      "nome": "Laranja Carcaleta",
+      "imagem": "https://i.pinimg.com/originals/c7/a8/57/c7a85711caded4d1eee800cb62a971e7.jpg",
+      "nota": "6.5",
+      "genero": "Comedia Romantica"
+    },
+    {
+      "id": 1,
+      "nome": "Matrix",
+      "imagem": "https://1.bp.blogspot.com/-EJZ23cv_Vj0/V0iUlVH4g6I/AAAAAAAAiKg/O_KMNfEYhzk2qbnZKqezzj7ZH9_uyo9YgCLcB/s1600/Mal%2Bd%25C3%25ADa%2Bpara%2Bpescar%2B-%2BCartel.jpg",
+      "nota": "8",
+      "genero": "Ficção Científica"
+    },
+    {
+      "id": 2,
+      "nome": "Laranja Mecanica",
+      "imagem": "https://1.bp.blogspot.com/-jKo-JY1x0mg/YUv2sT7KGUI/AAAAAAAADYM/Wdf1k3YZdv4Z9nLTeMe15mJ_I2CHqdOggCLcBGAsYHQ/s693/SIlvestre%2BLigero%2B2018.jpg",
+      "nota": "9.5",
+      "genero": "Ficção Científica"
+    },
+    {
+      "nome": "Luis",
+      "imagem": "https://nossaciencia.com.br/wp-content/uploads/2019/05/gera%C3%A7%C3%A3o-matrix.png",
+      "nota": "6.3",
+      "genero": "eeeeeee",
+      "id": 3
+    },
+    {
+      "nome": "pepe",
+      "imagem": "https://nossaciencia.com.br/wp-content/uploads/2019/05/gera%C3%A7%C3%A3o-matrix.png",
+      "nota": "8",
+      "genero": "Ficção Científica",
+      "id": 4
+    }
+  ]
+}
