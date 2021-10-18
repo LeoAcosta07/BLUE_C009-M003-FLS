@@ -16,8 +16,8 @@ const getFilmes = async () => {
             <h2>${filme.nota}</h2>
             <h3>${filme.nome}</h3>
             <p>${filme.genero}</p>
-            <a class="edit" onclick="putFilme(${filme.id}) href="#">Editar</a>
-            <a class="delete" onclick="deleteFilme(${filme.id}) href="#">Apagar</a>
+            <a class="edit" onclick="putFilme1(${filme.id})">Editar</a>
+            <a class="delete" onclick="deleteFilme(${filme.id})">Apagar</a>
         </div>
     </div>
     `)
@@ -46,45 +46,43 @@ const submitForm = async (evento) => {
 
     if(!edicao) { 
   
-      const request = new Request(`${urlApi}`, {
-        method: 'POST',
-        body: JSON.stringify(filme),
-        headers: new Headers({
+     const request = new Request(`${urlApi}/add`, {
+       method: 'POST',
+       body: JSON.stringify(filme),
+         headers: new Headers({
           'Content-Type': 'application/json'
-        })
-      })
+       })
+     })
       
       
-      const response = await fetch(request);
-      const result = await response.json();
+     const response = await fetch(request);
+     const result = await response.json();
+
+     if(result) {
+       getFilmes();
+     }
   
-      if(result) {
-        getFilmes();
-      }
-  
-    } else {
+   }else{
 
-
-
-      const request = new Request(`${urlApi}/${idEdicao}`, {
+       const request = new Request(`${urlApi}/${idEdicao}`, {
         method: 'PUT',
-        body: JSON.stringify(filme),
-        headers: new Headers({
-          'Content-Type': 'application/json'
-        })
-      })
+         body: JSON.stringify(filme),
+         headers: new Headers({
+           'Content-Type': 'application/json'
+         })
+       })
   
       
-      const response = await fetch(request);
+       const response = await fetch(request);
 
-      const result = await response.json();
+       const result = await response.json();
   
 
-      if(result) {
-        edicao = false;
-        getFilmes();
-      }
-    }
+       if(result) {
+       getFilmes();
+       }
+       edicao = false;
+   }
   
   
 
@@ -103,30 +101,27 @@ const submitForm = async (evento) => {
     return filme = response.json();
   }
   
-
-
-  const putFilme = async (id) => {
+  const putFilme1 = async (id) => {
     edicao = true;
     idEdicao = id;
-  
-
-    const filme = await getFilmeById(id);
-  
- 
-    let nomeEl = document.getElementById('nome');
-    let imagemEl = document.getElementById('imagem');
-    let notaEl = document.getElementById('nota');
-    let generoEl = document.getElementById('genero');
     
-    // preenchemos os campos do html de acordo com o que estava no objeto.
-    nomeEl.value = filme.nome;
-    imagemEl.value = filme.imagem
-    notaEl.value = filme.nota
-    generoEl.value = filme.genero
-  
+    const idFilme = id;
+    
+    const filme = await getFilmeById(idFilme);
+    console.log(filme);
+
+    let nomeEd = document.getElementById('nome');
+    let imagemEd = document.getElementById('imagem');
+    let notaEd = document.getElementById('nota');
+    let generoEd = document.getElementById('genero');
+    
+    
+    nomeEd.value = filme.nome;
+    imagemEd.value = filme.imagem;
+    notaEd.value = filme.nota;
+    generoEd.value = filme.genero;
   }
-  
-  
+
   
   const deleteFilme = async (id) => {
     const request = new Request(`${urlApi}/${id}`, {

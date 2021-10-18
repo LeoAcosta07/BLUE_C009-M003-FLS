@@ -250,6 +250,7 @@ main{
 .container .card .content .edit:hover{
     color: black;
     background-color: rgb(94, 158, 218);
+    cursor: pointer;
 }
 
 .container .card .content .delete{
@@ -261,6 +262,7 @@ main{
 .container .card .content .delete:hover{
     background-color: rgb(212, 92, 92);
     color: black;
+    cursor: pointer;
 }
 
 .footer{
