@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "nome": "Matrix",
+      "imagem":"https://nossaciencia.com.br/wp-content/uploads/2019/05/gera%C3%A7%C3%A3o-matrix.png",
+      "nota": "7.8",
+      "genero": "Ficção Científica"
+    },
+    {
+      "id": 2,
+      "nome": "Laranja Mecanica",
+      "imagem": "https://www.setcenas.com.br/wp-content/uploads/2020/11/1971-a-clockwork-orange-small-cke.jpg",
+      "nota": "9.0",
+      "genero": "Ficção Pepe"
+  }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

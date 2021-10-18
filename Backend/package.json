@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoAcosta07/BLUE_C009-M003-FLS.git"
+  },
+  "author": "Leo Acosta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeoAcosta07/BLUE_C009-M003-FLS/issues"
+  },
+  "homepage": "https://github.com/LeoAcosta07/BLUE_C009-M003-FLS#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
